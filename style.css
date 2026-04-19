@@ -1,0 +1,327 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 0%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 10px;
+}
+
+a {
+  background-color: #fed84c;
+  color: #2e363e;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 30px 50px;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+a:hover,
+a:focus {
+  transform: scale(1.02);
+  background-color: #2e363e;
+  color: #fff;
+}
+/* header */
+header {
+  max-height: 2000px;
+  height: 1294px;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(./images/first/a1c5a28082dac709c3bc25e03354f70f65edc4df.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* nav */
+.header_nav {
+  padding: 20px;
+  border-bottom: 1px solid #2e363e;
+}
+.header_nav_ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header_nav_ul li > h2 {
+  font-size: 2.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.header_nav_ul li > h2:hover {
+  color: #2e363e;
+}
+.header_nav_ul_info {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.header_nav_ul_info__city {
+  max-width: 125px;
+  margin-right: 100px;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+.header_nav_ul_info__phone {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 2rem;
+}
+.header_nav_ul_info__phone h3 {
+  cursor: pointer;
+}
+
+/* goToCatalog */
+
+.universalCont {
+  position: absolute;
+  top: 18%;
+  left: 15%;
+  max-height: 500px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 647px;
+  width: 647px;
+}
+.wihteBgColor {
+  border-radius: 3px;
+  background-color: #f2f6fa;
+  color: #2e363e;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 5px 15px;
+}
+.header_goToCatolog_cont1 h4 {
+  font-size: 4.8rem;
+  line-height: 143%;
+}
+.header_goToCatolog_cont1 p {
+  font-size: 3rem;
+  display: inline-block;
+  margin-top: 20px;
+  line-height: 143%;
+  max-width: 544px;
+  width: 544px;
+}
+.header_goToCatolog_cont2 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  max-width: 507px;
+}
+.header_goToCatolog_cont2 p {
+  line-height: 160%;
+  max-width: 210px;
+  font-size: 1.5rem;
+}
+
+/* main */
+
+/* catalog */
+
+section.catalog {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 1926px;
+  margin: 0 auto;
+}
+.catalog_cont {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.catalog_cont > h2 {
+  font-size: 4.8rem;
+  line-height: 6rem;
+  color: #2e363e;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.catalog_menuGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.catalog_menu_gridElement {
+  max-width: 380px;
+  max-height: 500px;
+  height: 500px;
+  width: 380px;
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid #f2f6fa;
+}
+.catalog_menu_gridElement img {
+  width: 100%;
+  max-width: 100%;
+  max-width: 380px;
+  height: 245px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.catalog_menu_gridElement_about {
+  padding: 30px 20px;
+  gap: 10px;
+  display: flex;
+  color: #2e363e;
+  flex-flow: wrap column;
+  align-items: flex-start;
+}
+.catalog_menu_gridElement_about h4,
+.catalog_menu_gridElement_about h6 {
+  font-size: 2.4rem;
+  line-height: 143%;
+  font-weight: 700;
+}
+.catalog_menu_gridElement_about p {
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+.catalog_menu_gridElement_about a {
+  width: 163px;
+  height: 60px;
+  text-align: center;
+  padding: 20px;
+}
+/* loadPhoto */
+
+section.loadPhoto {
+  background-color: #081130;
+  max-width: 100%;
+  max-height: 1352px;
+  height: 1352px;
+  position: relative;
+}
+
+section.loadPhoto img.cloud {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+section.loadPhoto img.phone {
+  max-width: 1094px;
+  object-fit: cover;
+  position: absolute;
+  z-index: 9;
+  bottom: 0%;
+  left: -10%;
+  max-height: 1034px;
+}
+.loadPhoto img.cloud:last-child {
+  position: absolute;
+  z-index: 10;
+  bottom: 0%;
+  left: 0%;
+}
+.loadPhotoFlex {
+  max-width: 481px;
+  width: 481px;
+  height: 454px;
+  max-height: 454px;
+  flex-wrap: nowrap;
+  left: 55%;
+  top: 30%;
+  z-index: 15;
+}
+
+/* conditer */
+
+.conditer {
+  max-width: 1920px;
+  width: 100%;
+  max-height: 830px;
+  height: 830px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 150px;
+  justify-content: center;
+  align-content: center;
+}
+
+.conditer_about {
+  max-width: 580px;
+  width: 580px;
+  height: 673px;
+  max-height: 673px;
+  display: flex;
+  flex-flow: wrap column;
+  align-items: flex-start;
+  gap: 30px;
+  position: relative;
+  left: 0%;
+}
+.conditer_about_header h2 {
+  font-size: 4.8rem;
+  color: #2e363e;
+  line-height: 6rem;
+}
+.conditer_about_facts ul {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 12px;
+  color: #2e363e;
+  font-size: 1.8rem;
+  list-style-type: none;
+  position: relative;
+  margin-top: 15px;
+}
+.conditer_about_facts li {
+  margin-left: 30px;
+}
+.conditer_about_facts ul li::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #5d6afb;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100;
+  left: 0%;
+  margin-top: 15px;
+}
+.conditer_image {
+  position: relative;
+  left: -10%;
+  top: 0%;
+  --size: 500px; /* Размер круга */
+  --bg-color: #fdd835; /* Желтый цвет фона */
+  
+  width: var(--size);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center; /* Прижимаем фото к низу */
+  position: relative;
+  
+  /* Создаем желтый круг на фоне */
+  background: radial-gradient(circle, var(--bg-color) 70%, transparent 71%);
+  border-radius: 50%; /* Для обрезки нижнего края */
+  overflow: hidden;
+  margin-left: 300px;
+}
+
+.conditer_image img {
+  width: 100%;
+  height: 120%; /* Делаем картинку выше контейнера */
+  object-fit: contain;
+  transform: scale(1.1); /* Немного увеличиваем для эффекта объема */
+  transition: transform 0.3s ease;
+}
